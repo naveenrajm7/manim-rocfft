@@ -24,15 +24,18 @@ def read_transformed_points_from_csv(filename, freqs, n_samples):
             real, imag = float(row[0]), float(row[1])
             coefficients.append(complex(real, imag))
 
+    # rocFFT calculates the Fourier transform for all n_samples 
+    # we only use the frequency (k) number of samples to draw the circles 
+    # so we map the frequencies (k) to the indices of the coefficients (n)
     # Map frequencies to indices
     freq_to_index = {freq: (freq + n_samples) % n_samples for freq in freqs}
 
     # Extract the coefficients corresponding to the specified frequencies
     extracted_coefficients = [coefficients[freq_to_index[freq]] for freq in freqs]
 
-    print("Extracted Fourier Coefficients:")
-    for i, coef in enumerate(extracted_coefficients):
-        print(i, coef)
+    # print("Extracted Fourier Coefficients:")
+    # for i, coef in enumerate(extracted_coefficients):
+    #     print(i, coef)
 
     return extracted_coefficients
 
