@@ -7,6 +7,10 @@ This project demonstrates the usage of the ROCm rocFFT library to compute Fourie
 
 ![AMD_Logo](output/AMDFourier.gif)
 
+Want to learn GPU programming though fun puzzles on AMD GPUs ? Check out [ROCm-Puzzles](https://github.com/naveenrajm7/ROCm-Puzzles)
+
+## Steps to recreate
+
 ### Setup ROCm
 
 1. Launch AWS G4ad instance with 100 GB of root volume
@@ -28,7 +32,7 @@ sudo docker run -it --device=/dev/kfd --device=/dev/dri --group-add video docker
 pip install manim
 ```
 
-### Compile ROCm fft  
+### Compile rocFFT program  
 
 ```bash
 hipcc fft.cpp -o fft -L/opt/rocm_sdk_612/rocfft/lib64 -lrocfft -mprintf-kind=buffered
