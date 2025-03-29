@@ -4,6 +4,9 @@
 
 This project demonstrates the usage of the ROCm rocFFT library to compute Fourier transform. It is done in a fun way by calculating the Fourier transform of the AMD logo, which is then used in Manim for animation. Each Fourier transform is used to draw epicycles, creating a reveal video of the AMD logo. 
 
+
+![AMD_Logo](output/AMDFourier.gif)
+
 ### Setup ROCm
 
 1. Launch AWS G4ad instance with 100 GB of root volume
