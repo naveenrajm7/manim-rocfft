@@ -7,7 +7,7 @@ This project demonstrates the usage of the ROCm rocFFT library to compute Fourie
 
 ![AMD_Logo](output/AMDFourier.gif)
 
-Want to learn GPU programming though fun puzzles on AMD GPUs ? Check out [ROCm-Puzzles](https://github.com/naveenrajm7/ROCm-Puzzles)
+Want to learn GPU programming through fun puzzles on AMD GPUs ? Check out [ROCm-Puzzles](https://github.com/naveenrajm7/ROCm-Puzzles)
 
 ## Steps to recreate
 
